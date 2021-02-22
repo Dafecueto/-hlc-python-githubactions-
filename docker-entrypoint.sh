@@ -1,1 +1,1 @@
-/usr/bin/python rock_paper_scissors.py
+/usr/bin/python /app/rock_paper_scissors.py
