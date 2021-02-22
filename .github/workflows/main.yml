@@ -75,8 +75,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: "146.59.155.170"
-          username: ${{ secrets.HOSTNAME }}
-          password: ${{ secrets.HOSTPASS }}
+          key: ${{ secrets.KEY }}
           port: 22
           script: |
             sudo su
