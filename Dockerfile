@@ -5,4 +5,4 @@ COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip install -r requirements.txt
 COPY . /app
-ENTRYPOINT "/docker-entrypoint.sh"
+ENTRYPOINT ["sh", "./docker-entrypoint.sh"]
