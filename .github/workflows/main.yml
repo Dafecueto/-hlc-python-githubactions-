@@ -72,11 +72,6 @@ jobs:
    
 
    steps:
-            # Make sure the @v0.5.0 matches the current version of the
-      - name: ssh keygen
-        uses: webfactory/ssh-agent@v0.5.0
-        with:
-         ssh-private-key: ${{ secrets.KEY }}
    
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
